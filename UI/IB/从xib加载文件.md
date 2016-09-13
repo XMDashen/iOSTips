@@ -7,3 +7,5 @@
 ```
 XMStockInfoCell *cell=[[[NSBundle mainBundle] loadNibNamed:@"XMStockInfoCell" owner:nil options:nil] firstObject];
 ```
+
+连线时报错的话,记得要删除连线
