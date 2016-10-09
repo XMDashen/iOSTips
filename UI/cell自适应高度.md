@@ -2,11 +2,37 @@
 
 ###cell上加载text等非耗时操作
 
+方法一:
+先调用估计cell高度代理方法
+```
+-(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+```
+
+创建cell并在cell里计算cell正确高度然后保存到cell的属性里
+```
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+```
+
+调用cell设置高度方法,返回cell的正确高度
+```
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+```
+***
+方法二:
+请求到数据后,直接算出高度保存在model里,在cell设置高度代理方法中直接返回这个高度,适用于与视图不想关的简单计算
+***
+
+方法三
+通过设置约束自适应高度
+***
+
 http://www.jianshu.com/p/38a52a53fb8e?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=qq
+
+
 
 ***
 ###cell上加载webView/图片等耗时操作
-
+eg:加载webView内容自适应高度,加载图片但后台没有传图片尺寸过来
 
 ```
 //重新计算的cell高度
