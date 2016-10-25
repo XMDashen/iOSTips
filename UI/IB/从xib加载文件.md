@@ -9,3 +9,7 @@ XMStockInfoCell *cell=[[[NSBundle mainBundle] loadNibNamed:@"XMStockInfoCell" ow
 ```
 
 连线时报错的话,记得要删除连线
+
+
+###从xib加载控制器 initWithNibName
+XMSuggestionController *suggestionVc=[[XMSuggestionController alloc] initWithNibName:NSStringFromClass([XMSuggestionController class]) bundle:nil];
