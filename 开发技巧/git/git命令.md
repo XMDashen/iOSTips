@@ -10,6 +10,8 @@ git branch branchname 创建新的分支
 git checkout branchname 切换到指定的分支
 git merge branchname 将branchname分支合并到本分支
 git reset --hard 6b9e6c30c6e05ebeb6b7a57be66e437f5e66a68e 回退版本到版本号
+git remote rm origin 移除已有远程仓库地址
+appledeMacBook-Pro:jiaju-ios apple$ git remote add origin 添加新的远程仓库地址
 
 Git rm 是rm file和git add这两个命令的结合
 

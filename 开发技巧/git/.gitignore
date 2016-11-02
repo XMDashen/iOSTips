@@ -19,7 +19,13 @@ xcuserdata/
 
 ## Other
 *.moved-aside
-*.xcuserstate
+*.xcuserstate 
+project.xcworkspace  
+xcuserdata  
+UserInterfaceState.xcuserstate  
+project.xcworkspace/  
+xcuserdata/  
+UserInterface.xcuserstate 
 
 ## Obj-C/Swift specific
 *.hmap
@@ -34,6 +40,9 @@ xcuserdata/
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
 # Pods/
+
+BaiduNaviSDK/
+
 
 # Carthage
 #
