@@ -17,4 +17,5 @@ Git rm 是rm file和git add这两个命令的结合
 
 如果删除文件通过rm file，可以通过git checkout -- file找回；如果删除文件是通过git rm file执行的，那么需要执行两个命令git reset HEAD file和git checkout -- file
 
+git 合并产生冲突时,可在打开工程文件源代码解决冲突
 
