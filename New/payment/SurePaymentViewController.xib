@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SurePaymentViewController">
+            <connections>
+                <outlet property="reminderLb" destination="hpL-LG-R8b" id="2hd-gT-Cdy"/>
+                <outlet property="surePayBt" destination="mKL-IY-jN2" id="Mxf-eb-stO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKL-IY-jN2">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Jzm-Ts-qL8"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="surePay:" destination="-1" eventType="touchUpInside" id="sXg-sU-ekL"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpL-LG-R8b">
+                    <color key="backgroundColor" red="0.97647058823529409" green="0.67450980392156867" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="pBE-aG-PNj"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="Label">
+                            <attributes>
+                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="11" name="PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hpL-LG-R8b" secondAttribute="trailing" id="Aj3-O8-2GJ"/>
+                <constraint firstAttribute="trailing" secondItem="mKL-IY-jN2" secondAttribute="trailing" id="NQy-pN-9am"/>
+                <constraint firstItem="hpL-LG-R8b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cS6-YP-trT"/>
+                <constraint firstAttribute="bottom" secondItem="mKL-IY-jN2" secondAttribute="bottom" id="gPU-x4-SfC"/>
+                <constraint firstItem="mKL-IY-jN2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lWy-et-yv2"/>
+                <constraint firstItem="hpL-LG-R8b" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="o1M-MC-txM"/>
+            </constraints>
+            <point key="canvasLocation" x="277.5" y="194.5"/>
+        </view>
+    </objects>
+</document>

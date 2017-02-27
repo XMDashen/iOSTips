@@ -48,3 +48,7 @@ NSString *str = [NSString stringWithFormat:
                          m_appleID ];  
 [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
 ```
+
+跳转设置
+NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+[[UIApplication sharedApplication] canOpenURL:url];
