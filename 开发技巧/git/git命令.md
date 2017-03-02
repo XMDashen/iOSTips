@@ -19,3 +19,5 @@ Git rm 是rm file和git add这两个命令的结合
 
 git 合并产生冲突时,可在打开工程文件源代码解决冲突
 
+rm -rf .git 移除git
+
