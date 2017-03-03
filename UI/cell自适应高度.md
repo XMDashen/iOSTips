@@ -26,6 +26,8 @@
 通过设置约束自适应高度
 ***
 
+cell底部约束到cell内容，imageView更改高度约束常量,label等自适应高度
+
 http://www.jianshu.com/p/38a52a53fb8e?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=qq
 
 
