@@ -43,12 +43,13 @@
 
 ####1.属性映射(JSON的key值和属性名不一致时调用该方法)
 //返回一个 Dict，将 Model 属性名对映射到 JSON 的 Key。(@"model属性名":@"JSON的KEY")
+```
 +(NSDictionary *)modelCustomPropertyMapper{
     
     
     return @{@"desc":@"description"};
 }
-
+```
 
 ####2.自定义容器类属性(容器内装的==基本数据类型==(NSString等)的话不用此方法也可以解析)
 //容器类属性--返回容器类中的所需要存放的数据类型 (以 Class 或 Class Name 的形式)。
