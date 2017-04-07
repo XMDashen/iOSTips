@@ -1,4 +1,4 @@
-##左滑Pop
+##右滑Pop
 
 navigationController自带左滑pop
 如果对导航栏进行了自定义，则左滑pop失效
@@ -25,6 +25,30 @@ navigationController自带左滑pop
 一定要判断是否为导航控制器首页
 如果是navigationController push出的首页会出bug
 
+//拦截右滑代理方法(本质是gesture的代理方法)
+```
+self.navigationController.interactivePopGestureRecognizer.delegate=self;
+```
+
+还原代理，原delegate为导航控制器的顶层控制器
+```
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+self.navigationController.interactivePopGestureRecognizer.delegate=[self.navigationController topViewController];
+}
+```
+
+```
+-(BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
+    
+    if (gestureRecognizer==self.navigationController.interactivePopGestureRecognizer) {
+        
+        
+        return YES;
+    }
+    return YES;
+}
+```
 
 
 
