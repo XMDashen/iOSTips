@@ -5,6 +5,9 @@
 	//创建布局flowLayout
     UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc] init];
     
+   //滑动方向(cell里加collectionView最好用xib拖，问题较少，[self.collectionView setCollectionViewLayout:layout];)
+   //layout.scrollDirection=UICollectionViewScrollDirectionVertical;
+    
     //最小行距
     layout.minimumLineSpacing=10;
     
@@ -12,7 +15,7 @@
     layout.minimumInteritemSpacing=4;
     
     //创建
-    self.collectionView=[[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+    self.collectionView=[[UICollectionView alloc] initWithFrame:CGRectMake collectionViewLayout:layout];
     
     //添加到父视图
     [self.view addSubview:_collectionView];
