@@ -16,23 +16,6 @@
 
 ```
 
-
-
-   
-####model配合cell常用套路
-   ```
-   //新闻模型
-@property(nonatomic,strong) XMNewsModel *model;
-
-//model的set方法里添加属性
--(void)setModel:(XMNewsModel *)model{
-
-	_model=model;
-	
-     //标题
-    self.titleLabel.text=model.title;
-
-}
 ```
 
 ###两个YYModel代理方法
@@ -92,3 +75,14 @@
 
 @end
 ```
+####比较两个模型所有属性值是否全部相等（modelHash值比较）
+PersonalInfoModel *model_1=[[PersonalInfoModel alloc] init];
+    model_1.nickname=@"111";
+    model_1.sex=@"0";
+    model_1.birthday=@"1222";
+    
+    PersonalInfoModel *model_2=[model_1 modelCopy];
+    model_2.nickname=@"222";
+    
+    NSLog(@"%d",[model_1 modelHash]);
+    NSLog(@"%d",[model_2 modelHash]);

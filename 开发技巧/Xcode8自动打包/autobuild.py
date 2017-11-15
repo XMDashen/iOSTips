@@ -10,8 +10,14 @@ sys.setdefaultencoding('utf-8')
 #CODE_SIGN_IDENTITY = "Automatic" iPhone Developer: yi cai (3UAC4RDDUL)
 #CODE_SIGN_IDENTITY = "iPhone Developer: yi cai (3UAC4RDDUL)"
 #PROVISIONING_PROFILE = "f9f96bd7-0bd9-45f3-8f2c-02032c400a64"
-CODE_SIGN_IDENTITY = "iPhone Developer"
+#CODE_SIGN_IDENTITY = "iPhone Developer"
+CODE_SIGN_IDENTITY = "iPhone Distribution"
 PROVISIONING_PROFILE = "Automatic"
+
+#ad_hoc
+#CODE_SIGN_IDENTITY = "iPhone Distribution: Chengdu xipuliangyuan wedding service co., LTD (75C82FC24V)"
+#PROVISIONING_PROFILE = "defae955-18b4-4d6a-be86-09a10fa09eb8"
+
 #PROVISIONING_PROFILE = "f9f96bd7-0bd9-45f3-8f2c-02032c400a64"
 #
 
